@@ -2,15 +2,6 @@
 slug: /
 title: What is LandGuard?
 sidebar_position: 1
-authors:
-  - name: Joel Marcey
-    title: Co-creator of Docusaurus 1
-    url: https://github.com/JoelMarcey
-    image_url: https://github.com/JoelMarcey.png
-  - name: Sébastien Lorber
-    title: Docusaurus maintainer
-    url: https://sebastienlorber.com
-    image_url: https://github.com/slorber.png
 tags: [greetings]
 ---
 **LandGuard** is a comprehensive land protection and management plugin for Minecraft servers. Designed to give players full control over their territory, LandGuard allows users to claim, customize, and protect lands from griefing and unauthorized actions—all through an intuitive command system and interactive GUIs.
