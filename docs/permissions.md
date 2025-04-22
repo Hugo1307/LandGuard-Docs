@@ -35,8 +35,8 @@ These permissions usually apply to players. They can limit access to commands as
 | `landguard.land.rename`                    | Allows renaming a land                                                 |
 | `landguard.land.teleport`                  | Allows teleporting to a land                                           |
 | `landguard.land.description`               | Allows updating the land's description                                 |
-| `landguard.permission.add`                 | Allows adding permissions to the access group of a certain land        |
-| `landguard.permission.remove`              | Allows removing permissions from the access group of a certain land    |
+| `landguard.permissions.add`                | Allows adding permissions to the access group of a certain land        |
+| `landguard.permissions.remove`             | Allows removing permissions from the access group of a certain land    |
 | `landguard.members.add`                    | Allows adding members to a land                                        |
 | `landguard.members.remove`                 | Allows removing members from a land                                    |
 | `landguard.members.promote`                | Allows promoting members within a land                                 |
