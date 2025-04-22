@@ -1,0 +1,8 @@
+{
+  "label": "Configuration Guide",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn how to configure the LandGuard plugin, including all available options and how to set them up."
+  }
+}
