@@ -8,7 +8,7 @@ This section contains a complete list of commands provided by the LandGuard plug
 
 ---
 
-### 📜 Command List
+### 📜 Player Commands
 
 | Command                                        | Permission                      | Description                                                             |
 |------------------------------------------------|---------------------------------|-------------------------------------------------------------------------|
@@ -27,8 +27,15 @@ This section contains a complete list of commands provided by the LandGuard plug
 | `/lg member remove <landId> <player>`          | landguard.members.remove        | Removes a player from the land.                                         |
 | `/lg member promote <landId> <player>`         | landguard.members.promote       | Promotes a member to a higher access group.                             |
 | `/lg member demote <landId> <player>`          | landguard.members.demote        | Demotes a member to a lower access group.                               |
-| `/lg permission add <landId> <groupName> <permission>` | landguard.permissions.add | Adds a permission to an access group of a land.                 |
-| `/lg permission remove <landId> <groupName> <permission>` | landguard.permissions.remove | Removes a permission from an access group of a land.      |
+| `/lg permission add <landId> <groupName> <permission>` | landguard.permissions.add | Adds a permission to an access group of a land.                       |
+| `/lg permission remove <landId> <groupName> <permission>` | landguard.permissions.remove | Removes a permission from an access group of a land.            |
 | `/lg flag toggle <landId> <flag>`              | landguard.flags.toggle          | Toggles a protection flag for the land.                                 |
 | `/lg help`                                     | landguard.help                  | Shows a list of all player-available commands.                          |
+
+### 📜 Admin Commands
+
+| Command                                        | Permission                      | Description                                                             |
+|------------------------------------------------|---------------------------------|-------------------------------------------------------------------------|
 | `/lg reload`                                   | landguard.reload                | Reloads the plugin configuration.                                       |
+| `/lg land delete <landId>`                     | landguard.admin.land.delete     | Delete any land in the server.                                          |
+| `/lg land all`                                 | landguard.admin.land.all        | List all existing lands in your server.                                 |

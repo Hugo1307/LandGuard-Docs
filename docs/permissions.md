@@ -68,6 +68,15 @@ Usually apply to players and can limit access to commands as well as GUI interac
 | `landguard.cancel`                         | Allows canceling land creation                                         | 
 | `landguard.help`                           | Allows viewing help information                                        | 
 
+### 🧾 Flags & Access Permissions
+
+These permissions apply to players and can be used by administrators to limit access to specific flags or access permissions.
+
+| Permission Node                            | Description
+|--------------------------------------------|-----------------------------------------------------------------------------------|
+| `landguard.flags.access.<flag>`            | Allows toggling a specific flag (e.g. `landguard.flags.access.BLOCK_BREAK`)       |
+| `landguard.permissions.access.<permission>`| Allows using a specific permission (e.g. `landguard.permissions.access.TELEPORT`) | 
+
 ### 🧾 Admin Features
 
 These permissions are usually reserved for server administrators or trusted players. They allow access to commands that affect the entire server and other players' lands.
@@ -75,6 +84,9 @@ These permissions are usually reserved for server administrators or trusted play
 | Permission Node                            | Description                                      
 |--------------------------------------------|------------------------------------------------------------------------|
 | `landguard.admin.reload`                   | Allows reloading the plugin configuration                              |
+| `landguard.admin.land.all`                 | Allows access to the command to list all lands in the server           |
+| `landguard.admin.land.delete`              | Allows deleting any land in the server                                 |
+
 
 ### 🧪 Tips
 
