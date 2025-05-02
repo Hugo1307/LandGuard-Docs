@@ -47,7 +47,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/Hugo1307/LandGuard-Docs/blob/main/',
-          sidebarCollapsed: false,
+          sidebarCollapsed: true,
           routeBasePath: '/', // Serve the docs at the site's root
         },
         blog: false,

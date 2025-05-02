@@ -11,14 +11,14 @@ sidebar_position: 3
 
 ---
 
-### 🌐 What Are MineSphere Core Features?
+### 🌐 What is MineSphere?
 
 MineSphere offers the following features:
 
 - **Web Access to Lands:** Players can view their own lands and explore other players’ lands via a modern web UI.
 - **Cloud Backups:** All land data is automatically backed up to the cloud, protecting against data loss in case of server failure.
 
-### 🔐 Getting Started with Integration
+### 🔐 Getting Started
 
 To enable MineSphere on your server, follow these steps:
 

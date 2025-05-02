@@ -1,7 +1,7 @@
 ---
 slug: what-are-flags
 title: What Are Flags?
-tags: [access, access-group]
+tags: [flags]
 sidebar_position: 1
 ---
 
