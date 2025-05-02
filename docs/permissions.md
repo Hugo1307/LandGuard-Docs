@@ -69,14 +69,14 @@ Usually apply to players and can limit access to commands as well as GUI interac
 | `landguard.cancel`                         | Allows canceling land creation                                         | 
 | `landguard.help`                           | Allows viewing help information                                        | 
 
-### 🧾 Flags & Access Permissions
+### 🧾 Flags & Access Groups Permissions
 
-These permissions apply to players and can be used by administrators to limit access to specific flags or access permissions.
+These permissions apply to players and can be used by administrators to limit access to specific flags or access group permissions.
 
 | Permission Node                            | Description
 |--------------------------------------------|-----------------------------------------------------------------------------------|
 | `landguard.flags.access.<flag>`            | Allows toggling a specific flag (e.g. `landguard.flags.access.BLOCK_BREAK`)       |
-| `landguard.permissions.access.<permission>`| Allows using a specific permission (e.g. `landguard.permissions.access.TELEPORT`) | 
+| `landguard.permissions.access.<permission>`| Allows using a specific access group permission (e.g. `landguard.permissions.access.TELEPORT`) | 
 
 ### 🧾 Admin Features
 

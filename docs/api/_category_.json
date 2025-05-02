@@ -1,6 +1,6 @@
 {
   "label": "API",
-  "position": 6,
+  "position": 7,
   "link": {
     "type": "generated-index",
     "description": "Learn how to use the LandGuard API, to extend the plugin, and to integrate it with other plugins."
