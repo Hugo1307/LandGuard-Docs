@@ -20,7 +20,8 @@ With support for both 2D and 3D land types, configurable permissions, and econom
 - **MineSphere Integration:** Players can access their lands via a web dashboard, and server data is automatically backed up to the cloud—ensuring land data survives crashes or resets.
 - **Fully Configurable:** All access groups, permissions, flags, and economy settings can be adjusted via the plugin’s configuration files. You can even define custom access groups!
 
-### 🌐 Ideal For:
+### 🌐 Where to Use?
+
 - **Survival Servers:** Protect player builds from trolls and accidents.
 - **Roleplay Communities:** Grant rich control over who can interact with land and how.
 - **Admin-Managed Worlds:** Monitor and assist players with flexible admin tools.

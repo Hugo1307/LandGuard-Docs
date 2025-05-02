@@ -11,12 +11,11 @@ LandGuard is built to work seamlessly with modern Minecraft server platforms bas
 
 ### ✅ Supported Server Software
 
-| Server Type  | Compatibility | Notes                                   |
-|--------------|----------------|------------------------------------------|
+| Server Type  | Compatibility   | Notes                                    |
+|--------------|-----------------|------------------------------------------|
 | **Spigot**   | ✅ Full Support | Native version, will always work better  |
 | **Paper**    | ✅ Full Support | Recommended for performance & stability  |
 | **Purpur**   | ✅ Full Support | Works with all LandGuard features        |
-| **Pufferfish** | ✅ Community-tested | Experimental support, no known issues    |
 
 > ℹ️ LandGuard is not compatible with **Forge**, **Fabric**, or **Bedrock-only** servers.
 

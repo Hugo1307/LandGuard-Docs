@@ -2,6 +2,7 @@
 slug: permissions
 title: Permissions
 tags: [permissions]
+sidebar_position: 3
 ---
 # Permissions
 

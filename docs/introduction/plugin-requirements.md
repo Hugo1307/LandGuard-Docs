@@ -15,7 +15,6 @@ LandGuard is a **Bukkit-based plugin**, compatible with the following server imp
 - **Spigot**
 - **Paper** *(Recommended for performance and plugin compatibility)*
 - **Purpur**
-- **Pufferfish** *(Community-tested)*
 
 > ❌ Not compatible with Bedrock-only servers or non-Bukkit platforms like Forge or Fabric.
 

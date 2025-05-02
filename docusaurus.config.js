@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'LandGuard Docs',
+  tagline: 'Documentation for LandGuard - Next-gen smart land protection for Minecraft servers',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -65,10 +65,6 @@ const config = {
       image: 'img/landguard-logo.png',
       navbar: {
         title: 'LandGuard Docs',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
         items: [],
       },
       footer: {
