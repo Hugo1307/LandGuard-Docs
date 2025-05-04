@@ -2,7 +2,7 @@
 slug: commands
 title: Commands
 tags: [commands, permissions]
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 This section contains a complete list of commands provided by the LandGuard plugin, along with their usage, description, and permissions required (if applicable). These commands allow players and administrators to interact with and manage lands easily through the in-game chat.
