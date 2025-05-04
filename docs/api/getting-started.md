@@ -21,32 +21,13 @@ To include the API in your own plugin, simply add the following Maven dependency
 </dependency>
 ```
 
-And, if you haven't already, add the Sonatype repository to your `pom.xml`:
-
-```xml
-<repositories>
-    <repository>
-        <id>sonatype</id>
-        <url>https://oss.sonatype.org/content/groups/public/</url>
-    </repository>
-</repositories>
-```
-
 ## 📦 Gradle Dependency
 
-To include the API in your own plugin, simply add the following Gradle dependency to your `build.gradle`:
+If you are using Gradle, just add the following Gradle dependency to your `build.gradle`:
 
 ```groovy
 dependencies {
     implementation 'io.github.hugo1307:landguard-api:1.0.0'
-}
-```
-
-And, if you haven't already, add the Sonatype repository to your `build.gradle`:
-
-```groovy
-repositories {
-    mavenCentral()
 }
 ```
 

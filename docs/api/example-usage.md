@@ -1,6 +1,6 @@
 ---
 slug: example-usage
-title: Usage
+title: Example Addon
 tags: [api, example]
 sidebar_position: 2
 ---
@@ -13,73 +13,78 @@ This example demonstrates how to create a basic plugin that integrates with the 
 
 ## 📦 Maven Dependency
 
-To use the LandGuard API in your project, add the following dependency to your pom.xml. The API is published on Maven Central:
+To use the LandGuard API in your project, add the following dependency to your `pom.xml`. The API is published on Maven Central:
 
 ```xml
 <dependency>
     <groupId>io.github.hugo1307</groupId>
     <artifactId>landguard-api</artifactId>
     <version>1.0.0</version>
+    <scope>provided</scope>
 </dependency>
 ```
 
 ## 📄 plugin.yml
 
-Make sure your plugin declares a dependency on LandGuard in the plugin.yml file:
+Make sure your plugin declares a dependency on LandGuard in the `plugin.yml` file:
 
 ```yaml
-name: LandLister
-version: 1.0
-main: com.example.landlister.LandListerPlugin
-api-version: 1.13
-depend: [LandGuard]
+name: LandLister-Addon
+version: '1.0-SNAPSHOT'
+main: io.github.hugo1307.landlister.LandListerAddon
+api-version: '1.18'
+prefix: LandLister-Addon
+author: Hugo1307
+description: An example addon for LandGuard plugin. Created using LandGuard API.
+depend:
+  - LandGuard
 ```
 
 ## 💻 Plugin Class: LandListerPlugin.java
 
 ```java
-package com.example.landlister;
+package io.github.hugo1307.landlister;
 
 import io.github.hugo1307.landguard.api.LandGuardApi;
-import io.github.hugo1307.landguard.api.land.Land;
-import io.github.hugo1307.landguard.api.land.LandManager;
+import io.github.hugo1307.landguard.api.managers.contract.LandManager;
+import io.github.hugo1307.landguard.data.domain.Land;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class LandListerPlugin extends JavaPlugin {
+public final class LandListerAddon extends JavaPlugin {
 
-    @Override
-    public void onEnable() {
-        // Check if LandGuard is enabled before accessing the API
-        if (!getServer().getPluginManager().isPluginEnabled("LandGuard")) {
-            getLogger().severe("LandGuard is not enabled! This plugin depends on LandGuard.");
-            getServer().getPluginManager().disablePlugin(this);
-            return;
-        }
-
-        // Safely get the LandGuard API instance
-        LandGuardApi api;
-        try {
-            api = LandGuardApi.get();
-        } catch (IllegalStateException e) {
-            getLogger().severe("Failed to access LandGuard API: " + e.getMessage());
-            return;
-        }
-
-        // Access the LandManager from the API to list all lands
-        LandManager landManager = api.getLandManager();
-        getLogger().info("Listing all registered lands:");
-
-        for (Land land : landManager.getAllLands()) {
-            getLogger().info(" - Land Name: " + land.getName());
-        }
-
-        getLogger().info("LandLister has finished loading successfully.");
+  @Override
+  public void onEnable() {
+    // Check if LandGuard is enabled before accessing the API
+    if (!getServer().getPluginManager().isPluginEnabled("LandGuard")) {
+      getLogger().severe("LandGuard is not enabled! This plugin depends on LandGuard.");
+      getServer().getPluginManager().disablePlugin(this);
+      return;
     }
 
-    @Override
-    public void onDisable() {
-        getLogger().info("LandLister has been disabled.");
+    LandGuardApi api;
+    try {
+      api = LandGuardApi.get();
+    } catch (IllegalStateException e) {
+      getLogger().severe("Failed to access LandGuard API: " + e.getMessage());
+      return;
     }
+
+    // Access the LandManager from the API to list all lands
+    LandManager landManager = api.getLandManager();
+    getLogger().info("Listing all registered lands:");
+
+    for (Land land : landManager.getAllLands()) {
+      getLogger().info(" - Land Name: " + land.getName());
+    }
+
+    getLogger().info("LandLister has finished loading successfully.");
+  }
+
+  @Override
+  public void onDisable() {
+    getLogger().info("LandLister has been disabled.");
+  }
+  
 }
 ```
 
