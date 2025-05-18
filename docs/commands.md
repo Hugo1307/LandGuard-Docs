@@ -21,6 +21,7 @@ This section contains a complete list of commands provided by the LandGuard plug
 | `/lg land tp <landId>`                         | landguard.land.teleport         | Teleports the player to the specified land.                             |
 | `/lg land info <landId>`                       | landguard.land.info             | Displays information about a specific land.                             |
 | `/lg land expand <landId> <direction> <rows>`  | landguard.land.expand           | Expands the land in a certain direction for a certain number of rows.   |
+| `/lg land preview <landId>`                    | landguard.land.preview          | Displays the land boundaries using particles.                           |
 | `/lg land rename <landId> <name>`              | landguard.land.rename           | Changes the name of the player's selected land.                         |
 | `/lg land setdesc <landId> <description>`      | landguard.land.description      | Updates the description of the player's selected land.                  |
 | `/lg confirm`                                  | landguard.confirm               | Confirms an action such as land creation.                               |

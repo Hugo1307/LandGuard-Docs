@@ -33,6 +33,7 @@ These permissions usually apply to players. They can limit access to commands as
 | `landguard.land.expand`                    | Allows the player to expand one of his lands                           |
 | `landguard.land.info`                      | Allows checking information about a land                               |
 | `landguard.land.info.all`                  | Allows checking a list of all lands                                    |
+| `landguard.land.preview`                   | Allows previewing the land boundaries                                  |
 | `landguard.land.rename`                    | Allows renaming a land                                                 |
 | `landguard.land.teleport`                  | Allows teleporting to a land                                           |
 | `landguard.land.description`               | Allows updating the land's description                                 |
@@ -87,6 +88,7 @@ These permissions are usually reserved for server administrators or trusted play
 | `landguard.admin.reload`                   | Allows reloading the plugin configuration                              |
 | `landguard.admin.land.all`                 | Allows access to the command to list all lands in the server           |
 | `landguard.admin.land.delete`              | Allows deleting any land in the server                                 |
+| `landguard.admin.land.preview`             | Allows previewing any land in the server                               |
 
 
 ### 🧪 Tips
